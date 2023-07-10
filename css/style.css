@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(123, 167, 118);
+    min-height: 100vh;
+    min-width: 50vh;
+    max-width: 50%;
+    margin: 0 auto;
+    gap: 0.4rem;
+    color: #fff;
+    font-weight: 400;
+    padding: 1rem;
+}
