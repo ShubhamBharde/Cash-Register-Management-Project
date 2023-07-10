@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash Register Manager</title>
+    <title>Cash Register Project</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,11 +15,11 @@
             Enter the bill amount and cash given by the customer and know minimum number of notes to return.
         </p>
 
-        <label for="bill-amount">Bill Amount:</label>
-        <input id="bill-amount" type="text">
+        <label for="bill-amount" class="label-info">Bill Amount:</label>
+        <input id="bill-amount" type="number" class="input" title="only numbers allowed">
 
-        <label for="cash-given">Cash Given:</label>
-        <input id="cash-given" type="text">
+        <label for="cash-given" class="label-info">Cash Given:</label>
+        <input id="cash-given" type="number" class="input" title="only numbers allowed">
 
         <button id="check-btn" class="btn">Check</button>
         <p id="error-message"></p>
@@ -36,6 +36,7 @@
                 <td class="no-of-notes"></td>
                 <td class="no-of-notes"></td>
             </tr>
+
             <tr>
                 <th>Note</th>
                 <td>2000</td>
@@ -47,6 +48,7 @@
                 <td>1</td>
             </tr>
         </table>
+
     </div>
 
     <script src="js/script.js"></script>
