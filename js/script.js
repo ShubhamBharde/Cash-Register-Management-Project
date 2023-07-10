@@ -30,7 +30,7 @@ function clickHandler() {
 
     // html table logic
     changeTable.style.display = 'block';
-    // errorMessage.style.display = 'none';
+    errorMessage.style.display = 'none';
 }
 
 // 4th step: function of show error message
