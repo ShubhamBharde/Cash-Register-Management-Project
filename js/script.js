@@ -16,6 +16,7 @@ function clickHandler() {
     const bill = billAmount.value;
     const cash = cashGiven.value;
     const givenToCustomerMoney = cash - bill;
+    errorMessage.style.display = 'none';
 
     if (bill > 0) {
         if (cash >= parseInt(bill)) {
@@ -30,7 +31,6 @@ function clickHandler() {
 
     // html table logic
     changeTable.style.display = 'block';
-    errorMessage.style.display = 'none';
 }
 
 // 4th step: function of show error message
