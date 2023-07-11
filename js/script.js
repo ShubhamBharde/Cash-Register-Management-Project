@@ -15,12 +15,12 @@ checkBtn.addEventListener('click', clickHandler);
 function clickHandler() {
     const bill = billAmount.value;
     const cash = cashGiven.value;
-    const givenToCustomerMoney = cash - bill;
     errorMessage.style.display = 'none';
-
+    
     if (bill > 0) {
         if (cash >= parseInt(bill)) {
-            returnChangeLogic(givenToCustomerMoney) // process: return the change logic 
+            const returnAmount = cash - bill;
+            returnChangeLogic(returnAmount) // process: return the change logic 
             // console.log('thanks for shopping! this is your change.');
         } else {
             showErrorMsg('Do You wanna wash our dishplate?');
@@ -39,7 +39,7 @@ function showErrorMsg(msg) {
     errorMessage.innerText = msg;
 }
 
-// 5th step: main logic how note return back to customer
+// 5th step: main logic how many note gave to return back to customer
 function returnChangeLogic(balanceAmount) {
     for (let i = 0; i < availNotes.length; i++) {
         const giveNote = Math.trunc(balanceAmount / availNotes[i]);
