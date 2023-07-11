@@ -55,6 +55,7 @@
     font-weight: 800;
     margin-bottom: 1.7rem;
 }
+
 #error-message {
     display: none;
     color: red;
@@ -68,10 +69,11 @@ caption {
 }
 
 .change-table {
-    display: none; 
+    display: none;
     max-width: 90%;
     font-size: 1.2rem;
     color: #000;
+    overflow: auto;
 }
 
 td,
@@ -85,6 +87,6 @@ th {
     text-align: center;
 }
 
-.no-of-notes{
+.no-of-notes {
     color: purple;
 }
