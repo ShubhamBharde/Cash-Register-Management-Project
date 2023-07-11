@@ -16,12 +16,15 @@ function clickHandler() {
     const bill = billAmount.value;
     const cash = cashGiven.value;
     errorMessage.style.display = 'none';
-    
+
     if (bill > 0) {
         if (cash >= parseInt(bill)) {
             const returnAmount = cash - bill;
             returnChangeLogic(returnAmount) // process: return the change logic 
             // console.log('thanks for shopping! this is your change.');
+
+            // html table logic
+            changeTable.style.display = 'block';
         } else {
             showErrorMsg('Do You wanna wash our dishplate?');
         }
@@ -29,8 +32,6 @@ function clickHandler() {
         showErrorMsg('Invalid Bill Amount! bill is always greater than zero');
     }
 
-    // html table logic
-    changeTable.style.display = 'block';
 }
 
 // 4th step: function of show error message
